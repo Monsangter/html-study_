@@ -1,0 +1,410 @@
+Day2 html
+
+Chap paragraphs 
+<p>
+
+<hr> horizontal rules.
+Is an empty tag.
+경계선 
+
+<br>
+Line breaks.(a new line)
+Is an empty tag.
+
+<pre>
+The text in side a <pre> is displayed in a fixed width font.
+It preserves both spaces and line breaks
+
+Exercise:
+1
+<html>
+<body>
+<p>hello world!</p>
+</body>
+</html>
+2
+</h1>
+</p>
+3
+<hr>
+4
+<br>
+5
+<pre>
+</pre>
+
+====
+
+Chap styles
+
+Html element can be done with the style attribute.
+
+Property = possession, land or goods owned. Things subject to ownership.
+
+
+Bg color
+
+<body style="background-color:powderblue;">
+
+<h1 style="background-color:powderblue;"></h1>
+
+
+Text color
+
+<h1 style="color:blue;">
+<p style="color:blue;">
+
+Font
+
+<h1 style="font-family:verdana;>
+
+Text size
+
+<h1 style="font-size:300%;">
+
+Text alignment
+
+<h1 style ="text-align:center;">
+
+Summary
+
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+
+Exercise:
+1
+<p style="color:blue;">
+2
+<p style="font-family:courier;">
+3
+<p style="text-align:center;">
+4
+<p style="font-size:50px;">
+5
+<body style="background-color:yellow;">
+6
+<body style="text-align:center;">
+====
+
+Chap text formatting.
+
+<b>, <strong> bold
+<I>, <em> italic
+<small> smaller text
+<mark> marked. (Bg color yellow
+<del> strike a line through
+<ins> insert. (Underline
+<sub> subscript. half a character blow the normalize. Some time rendered in a smaller font.
+<sup> superscript. Can be used for footnotes(각주)
+
+Exercise:
+1
+<bold></bold>
+2
+<ins></ins>
+3
+<mark></mark>
+4
+<sub></sub>
+5
+<del></del>
+
+====
+
+Chap quotation
+
+<block quote>
+Browsers usually indent blockquote elements
+Indent en (in) + dent (tooth) 들여쓰기
+<blockquote cite="https://www.~>
+
+Short quotations
+Insert quotation marks 
+<q>
+
+Abbreviations
+
+<abbr> defines an abbreviation or an acronym
+Can give useful information to browsers, translation systems, and search-engines
+<p>the <abbr title="World Health Organization">WHO</p>
+
+address
+<address>
+Defines the contact information like email url etc.
+Always add a line break before and after the element.
+
+Cite 
+<cite>
+Defines the title of a creative work. A person's name is not the title of a work.
+Usually renders in italic.
+
+Bi-directional override
+Override 기각하다. 우선하다. 자동기계등을 중단시키다. Ofer (ride across, through or over) ride (to ride)
+To trample down, to set aside arrogantly.
+<bdo dir="rtf">(right to left)
+Is used to override the current text direction
+
+Exercise:
+1
+<q></q>
+2
+<blockquote cite=""></blockquote>
+3
+<bdo dir="rtf"></bdo>
+4
+<abbr title=""></abbr>
+
+====
+
+Chap comments
+
+Comments 
+Not displayed by the browser, but can help document html source code
+
+<!-- This is a comment -->
+Place notifications and reminder.
+
+Hide content with comment
+
+<!-- <p> this is. ~~ </p>-->
+
+
+===
+
+Chap colors
+
+Html color are specified with predefined color names or with Rgb etc values.
+Html support 140 standard color names.
+
+Background color
+
+Style="background-color:~~;"
+
+Text color
+
+style="color:~~;"
+
+Border color
+
+style="border:2px solid tomato;"
+
+Color values
+
+Hex Reba hula
+----
+
+Rgb(255,99,71, 0.5)
+#ff6347
+hsl(9, 100%, 64%, 0.5)
+
+RGBA is an extension of Rob with and alpha chanel(opacity)
+Opacity opacitatem "shade, shadiness"
+
+000 is displayed as white
+255 is displayed as black
+
+
+Using equal values for all three parameters changes shades of gray.
+
+rgb(60,60,60) Rgb (240,240,240)
+
+0.0(fully transparent) 1.0(not transparent at all)
+
+Hex colors
+
+Using hexadecimal value in the form
+
+#rrggbb
+Between 00 and ff
+
+Hsl color values
+
+
+hsla(hue, saturation, lightness, alpha)
+Hue 빛깔, 색조 , 색깔(신념등의 색 유형) his, old English color
+
+Hue is a degree on the color wheel from 0 to 360. 0 is red 120 I s green 240 is blue.
+
+Saturation is a percentage value. 0% shade of gray 100% full color
+
+Lightness is also a percentage value. 0% black 100% white
+
+Saturation 포화도. 포화. Saturare. To fill full. PIE Sa- Satisfy.
+
+====
+
+Chapter css
+
+Cascading style sheet
+Save a lot of work. Control layout of multiple web pages all at once
+Control color. Font . Size of text.. spacing...
+Different displays for different devices and screen sizes.
+
+Cascading means applied to a parent element will also apply to all children elements.
+Imagine who you set the color of the body text.
+
+Inline - using style attribute
+Internal - using style element in <head> section
+External - using a <link> element to external css file
+
+Most common way in making solution is external.
+
+Inline css
+Apply a unique style to a single html element
+
+<h1 style="color:blue;">A Blue heading</h1>
+
+Internal css
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+Body {background-color: powderblue;}
+H1 {color:blue;}
+P {color:blue;}
+</style>
+</head>
+<body>
+</body>
+</html>
+
+External css
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1></h1>
+<p></p>
+</body>
+</html>
+
+styles.css
+Body {
+	background-color:powderblue;
+}
+H1 {
+	color:blue;
+}
+P {
+	color:red;
+}
+
+-----
+
+Css color, font size.
+
+<head>
+<style>
+H1 {
+	color: blue;
+	font-family: Verdana;
+	font-size: 40px;
+}
+P {
+	color: blue;
+	font-family: verdana;
+	font-size: 20px;
+}
+</style>
+</head>
+
+
+Border 
+define a border around an html element
+U can define for nearly all html elements.
+
+
+P{
+	border: 2px solid powderblue;
+}
+
+Padding
+This property defines a padding(space) between the text and the border.
+P{
+	border: 2px solid powderblue;
+	padding: 30px;
+}
+
+Margin
+Defines a margine(space) outside the border.
+
+----
+
+Link to external css
+
+<link rel="stylesheet" href="https://www.~~~/html/styles.css">
+Example uses a full url
+
+<link rel="stylesheet" href="/html/styles.css">
+Example stylesheet located in the html folder on the current website.
+<link rel="stylesheet" href="styles.css">
+Located in the same folder as the current page.
+
+Summary.
+
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+
+Exercise:
+1
+Body {
+	background-color:yellow;
+}
+2
+Body {
+	font-family:courier;
+}
+3
+Body {
+	color:red;
+}
+4
+P {
+	border:1px solid yellow;
+}
+
+======
+
+Chapter links
+Are found in nearly all web pages . 
+Doesn't have to be text. Can be an image or any other html element.
+
+<a href="https://~">link text</a>
+
+Target
+
+By default the linked page will be displayed in the current browser window.
+
+_self - default
+_blank - opens the document in. A new window or tab
+_parent - opens the document in the parent frame
+_top - opens the document in the full body of the window.
+파렌트나 탑이나 걍 현재탭에서 열리는데?
+블랭크는 새탭 셀프는 작은 창 영역에서만 .. 좀더 스트럭쳐 한의미 엿던듯..
+
+Absolute urls vs. relative urls
+
+Absolute urls(a full web address)
+Relative urls 
+a local link( Link to a page within the same website) 
+is specified with a relative url(without the https://part)
+
+<h2> absolute urls</h2>
+<p><a href="https://www.w3.org/">w3c</a></p>
+
+<h2> relative urls</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
