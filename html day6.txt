@@ -1,0 +1,221 @@
+Bookmarks with Id and links
+
+Bookmarks are used to allow readers to jump to specific parts of a webpage
+Bookmarks can be useful if your page is very long.
+To use bookmark. First create it and add a link to it
+When the link is clicked page will scroll to the location with the bookmark.
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+Id attribute can also be used by jvsc to perform some tasks for that specific element.
+
+<script>
+Function
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+The id attribute is used to specify a unique id for an HTML element
+The value of the id attribute must be unique within the HTML document
+The id attribute is used by CSS and JavaScript to style/select a specific element
+The value of the id attribute is case sensitive
+The id attribute is also used to create HTML bookmarks
+JavaScript can access an element with a specific id with the getElementById() method
+
+Chap iframe.
+Is used to display a web page within a webpage
+<iframe src="url" title="description"></iframe>
+It is a good practice to always include a title attribute for the <iframe>. This is used by screen readers to read out what the content of the iframe is.
+
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+Or you can use css properties 
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+<iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+iframe에서 링열기!!
+>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.
+
+The HTML <iframe> tag specifies an inline frame
+The src attribute defines the URL of the page to embed
+Always include a title attribute (for screen readers)
+The height and width attributes specifies the size of the iframe
+Use border:none; to remove the border around the iframe
+
+---
+
+Chap javascript
+
+Script tag
+
+Script tag is used to define a client-side script (javascript)
+
+Script element contains script statements or points to an external script file through the src attribute.
+
+보통의 자바스크립트 사용은 이미지 조작, 폼 수락, 콘텐츠의 동적 변화
+
+To select an html element javascript most often uses the document.getelementbyid()
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+No script tag
+
+defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts:
+
+---
+
+Chap file paths
+
+<img src="picture.jpg">	
+The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	
+The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	
+The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	
+The "picture.jpg" file is located in the folder one level up from the current folder
+
+File paths are used when linking to external files, like:
+
+Web pages
+Images
+Style sheets
+JavaScripts
+
+---
+
+Chap head element
+
+The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>.
+
+Is a container for metadata and is place between html tag and body tag
+
+Title element
+The <title> element is required in HTML documents!
+
+The contents of a page title is very important for search engine optimization (SEO)! search engine algorithms to decide the order when listing pages in search results.
+
+The <title> element:
+
+defines a title in the browser toolbar
+provides a title for the page when it is added to favorites
+displays a title for the page in search engine-results
+
+accurate and meaningful
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Meaningful Page Title</title>
+</head>
+<body>
+
+The content of the document......
+
+</body>
+</html>
+
+The HTML <style> Element
+
+<style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
+
+The HTML <link> Element
+
+The <link> element defines the relationship between the current document and an external resource.
+
+The <link> tag is most often used to link to external style sheets:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+  
+</body>
+</html>
+
+The HTML <meta> Element
+The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+
+The metadata will not be displayed on the page, but are used by browsers (how to display content or reload page), by search engines (keywords), and other web services.
